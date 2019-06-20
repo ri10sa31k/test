@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>部品関連</title>
+  <meta charset="UTF-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="components_style.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<style>
+#user-input-form {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+
+#user-input-form input {
+  width: 20%;
+}
+</style>
+<body>
+
+  <!-- radioボタン -->
+<div class="form-radio">
+  <div class="box">
+    <input type="radio" id="radio1" name="kubun" />
+    <label for="radio1">家</label>
+    <input type="radio" id="radio2" name="kubun" />
+    <label for="radio2">勤務先</label>
+    <input type="radio" id="radio3" name="kubun" />
+    <label for="radio3">その他</label>
+  </div>
+</div>
+
+
+<!-- form例 -->
+<form id="user-input-form">
+    <div class="form-field">
+      <h2 class="form-title">会員情報登録</h2>
+      所属先：<input type="password" name="department" placeholder="営業部" /><br>
+      連絡先番号：<input type="text" name="phonenumber" placeholder="000-111-222" />
+      <input type="button" name="next" class="form-button" value="Submit" />
+    </div>
+</form>
+
+
+<!-- dropdown menu -->
+<div class="selectbox">
+<select required>
+  <option value="" hidden>Choose</option>
+  <option value="1">XS</option>
+  <option value="2">S</option>
+  <option value="3">M</option>
+  <option value="4">L</option>
+</select>
+</div>
+
+</body>
+</html>
