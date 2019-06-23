@@ -1,60 +1,45 @@
+  <!DOCTYPE html>
+  <html>
+  <title>トップページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="top_style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    </style>
+  <body>
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <link href="style.css" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <title></title>
-  <script>
-    $(function(){
-      $('.js-menu__item__link').each(function(){
-        $(this).on('click',function(){
-          $(this).toggleClass('on');
-          $("+.submenu",this).slideToggle()
-          return false;
-        });
-      });
-    });
-  </script>
-</head>
+      <div class="header">
+      <a href="#">Header</a>
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#" class="right">Taro Tsubokura</a>
+    </div>
 
-<body>
-  <header>
-    <h1>Navigation Bar</h1>
-  </header>
+  <div class="sidebar sidebar-light-grey" style="width:15%">
+    <a href="#" class="sidebar-button"></a>
+    <div class="dropdown-hover">
+      <button class="sidebar-button">注文受付
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content w3-bar-block">
+        <a href="#" class="sidebar-button">注文内容登録</a>
+        <a href="#" class="sidebar-button">注文内容変更</a>
+        <a href="#" class="sidebar-button">注文内容検索</a>
+      </div>
+    </div> 
+    <a href="#" class="sidebar-button">会員登録</a> 
+    <a href="#" class="sidebar-button">商品登録</a> 
+  </div>
 
-    <!-- Navigation Bar -->
-    <ul class="menu">
-      <!-- 注文内容登録 -->
-      <li class="menu__item">
-        <a class="menu__item__link js-menu__item__link" href="">注文内容登録</a>
-        <ul class="submenu">
-          <li class="submenu__item">
-            <a href="">注文内容登録</a>
-          </li>
-          <li class="submenu__item">
-            <a href="">注文内容変更</a>
-          </li>
-          <li class="submenu__item">
-            <a href="">注文内容検索</a>
-          </li>
-        </ul>
-      </li>
-      <!-- 注文内容登録ここまで ---- >
+  <div style="margin-left:15%">
 
-      <!-- 会員登録 -->
-      <li class="menu__item">
-        <a class="menu__item__link js-menu__item__link" href="">会員登録</a>
-      </li>
-      <!-- 会員登録ここまで -->
+  <div class="container">
+  <h2>メイン</h2>
+  <p>注文受付票などを出力</p>
+  <p>ボタンを配置</p>
+  </div>
 
-      <!-- 商品登録 -->
-      <li class="menu__item">
-        <a class="menu__item__link js-menu__item__link" href="">商品登録</a>
-      </li>
-      <!-- 商品登録-->
-    </ul>
-    <!-- Navigation Bar ここまで-->
-</body>
-</html>
+  </div>
+        
+  </body>
+  </html>
