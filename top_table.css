@@ -1,0 +1,401 @@
+/* 全体 */
+html {
+  overflow-x: hidden -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0
+}
+
+html, body {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5
+}
+
+
+/* Header */
+.header {
+  overflow: hidden;
+  background-color: #3849aa;
+  height: 50px;
+}
+
+.header a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.header a.right {
+  float: right;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* サイドメニュー */
+.sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #fff;
+  position: fixed!important;
+  z-index: 1;
+  overflow: auto;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.sidebar-light-grey {
+  color: #000!important;
+  background-color: #f1f1f1!important
+}
+
+
+/* サイドメニュー ボタン */
+.sidebar a {
+  background-color: transparent;
+  color: inherit;
+}
+
+.sidebar a:active, a:hover {
+  outline-width: 0
+}
+
+.sidebar-button {
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+
+.sidebar-button:hover {
+  color: #000!important;
+  background-color: #ccc!important
+}
+
+.sidebar-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3
+}
+
+
+/* ドロップダウンメニュー */
+.dropdown-hover {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  cursor: pointer
+}
+
+.dropdown-hover .dropdown-content {
+  min-width: 100%
+}
+
+.dropdown-hover .sidebar-button {
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px
+}
+
+.dropdown-hover:hover .dropdown-content {
+  display: block
+}
+
+.dropdown-hover:first-child {
+  background-color: #ccc;
+  color: #000
+}
+
+.dropdown-hover:hover>.sidebar-button:first-child {
+  background-color: #ccc;
+  color: #000
+}
+
+.dropdown-content {
+  cursor: auto;
+  color: #000;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  margin: 0;
+  padding: 0;
+  z-index: 1
+}
+
+
+/* メイン */
+h2 {
+  font-size: 30px
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0
+}
+
+.container {
+  padding: 0.01em 16px
+}
+
+
+/* テーブル */
+.container-table {
+  width: 80%;
+  /* min-height: 100vh; */
+  background: #C5CAE9;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+}
+
+.wrap-table {
+  width: 1170px;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+table * {
+  position: relative;
+}
+
+table td, table th {
+  padding-left: 8px;
+}
+
+table thead tr {
+  height: 60px;
+  background: #36304a;
+}
+
+table tbody tr {
+  height: 50px;
+}
+
+table tbody tr:last-child {
+  border: 0;
+}
+
+table td, table th {
+  text-align: left;
+}
+
+table td.l, table th.l {
+  text-align: right;
+}
+
+table td.c, table th.c {
+  text-align: center;
+}
+
+table td.r, table th.r {
+  text-align: center;
+}
+
+.order-table-head th{
+  font-family: OpenSans-Regular;
+  font-size: 15px;/* 18px; */
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-family: OpenSans-Regular;
+  font-size: 13px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+
+/* 列 */
+th.column1 {
+  width: 70px;
+  text-align: center;
+  padding-left: 5px;
+}
+
+.column1 {
+  width: 70px;
+  padding-left: 25px;
+}
+
+.column2 {
+  width: 160px;
+}
+
+.column3 {
+  width: 245px;
+}
+
+.column4 {
+  width: 95px;
+  text-align: right;
+}
+
+.column5 {
+  width: 95px;
+  text-align: right;
+}
+
+.column6 {
+  width: 110px;
+  text-align: right;
+}
+
+.column7 {
+  width: 80px;
+  text-align: right;
+}
+
+.column8 {
+  width: 120px;
+  text-align: right;
+}
+
+.column9 {
+  width: 120px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 992px) {
+  table {
+    display: block;
+  }
+  table > *, table tr, table td, table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  table tbody tr td {
+    padding-left: 40% !important;
+    margin-bottom: 24px;
+  }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  table tbody tr td:before {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Date";
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Order ID";
+  }
+  table tbody tr td:nth-child(3):before {
+    content: "Name";
+  }
+  table tbody tr td:nth-child(4):before {
+    content: "Price";
+  }
+  table tbody tr td:nth-child(5):before {
+    content: "Quantity";
+  }
+  table tbody tr td:nth-child(6):before {
+    content: "Total";
+  }
+
+  .column4,
+  .column5,
+  .column6 {
+    text-align: left;
+  }
+
+  .column4,
+  .column5,
+  .column6,
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+  }
+
+  tbody tr {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-table {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
